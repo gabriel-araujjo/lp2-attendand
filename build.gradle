@@ -1,0 +1,18 @@
+group 'br.ufrn.imd.lp2'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'application'
+
+mainClassName = "br.ufrn.imd.lp2.Main"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+run {
+    standardInput = System.in
+}
